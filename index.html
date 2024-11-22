@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Student Performance Tracker</h1>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Add Student</h2>
+                <form id="student-form">
+                    <input type="text" id="student-name" placeholder="Student Name" required>
+                    <input type="number" id="math-score" placeholder="Math Score (0-100)" required>
+                    <input type="number" id="science-score" placeholder="Science Score (0-100)" required>
+                    <input type="number" id="english-score" placeholder="English Score (0-100)" required>
+                    <button type="submit">Add Student</button>
+                </form>
+            </section>
+
+            <section class="performance-section">
+                <h2>Student Performance</h2>
+                <div id="student-performance"></div>
+            </section>
+
+            <section class="average-section">
+                <h2>Class Average</h2>
+                <button id="calculate-average">Calculate Class Average</button>
+                <p id="class-average">Class Average: -</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Student Performance Tracker</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
